@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG 知识库演示</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>内部知识库问答</h1>
+      <p class="subtitle">基于公司内部文档的 RAG 演示</p>
+    </header>
+
+    <div class="chat-area" id="chatArea">
+      <div class="welcome">
+        <p>试试问：</p>
+        <ul>
+          <li><a href="#" class="suggest">报销要几天到账？</a></li>
+          <li><a href="#" class="suggest">年假有几天？</a></li>
+          <li><a href="#" class="suggest">WiFi 密码是什么？</a></li>
+          <li><a href="#" class="suggest">试用期多久？</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <form id="form" class="input-area">
+      <input type="text" id="input" placeholder="输入问题…" autocomplete="off" />
+      <button type="submit">发送</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
