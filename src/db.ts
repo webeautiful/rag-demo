@@ -29,6 +29,7 @@ export function openDb(): DatabaseSync {
 
     CREATE INDEX IF NOT EXISTS idx_chunks_source ON chunks(source_id);
 
+      -- 1024 维 = bge-m3 / bge-m3-mlx-fp16;换其他维度的 embedding 模型须删 data/kb.sqlite 重新 ingest
     CREATE VIRTUAL TABLE IF NOT EXISTS vec_chunks USING vec0(
       embedding float[1024]
     );

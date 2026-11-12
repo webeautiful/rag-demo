@@ -1,3 +1,4 @@
+import './env.ts'; // 副作用:加载 .env(须在读取 process.env 之前)
 import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';

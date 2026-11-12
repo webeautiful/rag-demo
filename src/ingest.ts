@@ -1,3 +1,4 @@
+import './env.ts'; // 副作用:加载 .env(须在读取 process.env 之前)
 import { readdirSync, readFileSync, statSync, mkdirSync, existsSync, cpSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { createHash } from 'node:crypto';
